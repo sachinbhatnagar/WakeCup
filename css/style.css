@@ -1,0 +1,262 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.active,
+nav a:hover {
+    color: #ffc107;
+}
+
+/* Home Page */
+
+/* Image section styles */
+.image-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.image-overlay {
+    position: relative;
+    width: 100%;
+}
+
+.image-overlay img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #333;
+    opacity: 80%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.image-container img {
+    max-width: 98%; /* Adjust as needed */
+}
+
+/* Hero section styles */
+.hero-section {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Coffee Blends section styles */
+.coffee-blends-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.coffee-blend {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Home Page */
+
+/* About Us Page */
+
+.about-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.about-section h2 {
+    color: #333;
+}
+
+/* Banner section styles */
+.banner-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact section styles */
+.contact-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact-section h2 {
+    color: #333;
+}
+
+/* Form styles (customize as needed) */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label,
+form input,
+form select,
+form textarea {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ffc107;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+    /* Styles for small screens */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    
+
+    label.menu-icon {
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        background-color: #333;
+        top: 60px;
+    }
+
+    #menu-toggle:checked + header nav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .hero-section {
+        padding: 30px;
+    }
+
+    .coffee-blends-section {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .image-container {
+        flex-direction: column;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .image-overlay {
+        margin-bottom: 20px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+}
