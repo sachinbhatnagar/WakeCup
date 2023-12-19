@@ -131,6 +131,11 @@ nav a:hover {
 }
 
 /* Banner section styles */
+.banner-section {
+    text-align: center;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
 .banner-section img {
     max-width: 100%;
     height: auto;
@@ -217,6 +222,59 @@ form button:hover {
 .cost {
     color: #777;
     margin-top: 10px;
+}
+
+/* Learn section styles */
+.learn-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.workshop-card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.workshop-card h3 {
+    color: #333;
+}
+
+.workshop-card p {
+    color: #777;
+}
+
+.signup-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+    background-color: #ffc107; /* Change to your desired hover color */
+}
+
+/* Cafes section styles */
+.cafes-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.cafe-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cafe-card h3 {
+    color: #333;
 }
 
 /* Footer styles */
@@ -310,5 +368,17 @@ footer {
 
     .equipment-item {
         width: 100%;
+    }
+
+    .learn-section {
+        padding: 10px;
+    }
+
+    .workshop-card {
+        padding: 15px;
+    }
+
+    .cafes-section {
+        padding: 30px;
     }
 }
