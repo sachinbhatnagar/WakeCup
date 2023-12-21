@@ -17,8 +17,8 @@ a{
 
 /* Header styles */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #C65236;
+    color: #d1ccc0; /* Light Beige */
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -46,7 +46,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #d1ccc0;
     margin: 0 15px;
     transition: color 0.3s;
 }
@@ -86,7 +86,7 @@ nav a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #4C3832;
     opacity: 80%;
     color: white;
     border: none;
@@ -133,12 +133,14 @@ nav a:hover {
 /* Banner section styles */
 .banner-section {
     text-align: center;
-    overflow: hidden; /* Ensure the image doesn't overflow */
+    overflow: hidden;
 }
 
 .banner-section img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    display: block;
+    margin: 0;
 }
 
 /* Contact section styles */
@@ -277,9 +279,242 @@ form button:hover {
     color: #333;
 }
 
+/* Source section styles */
+.source-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.source-section h2 {
+    color: #333;
+}
+
+.source-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.source-card h3 {
+    color: #333;
+}
+
+/* Blends section styles */
+.blends-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.blends-section h2 {
+    color: #333;
+}
+
+.blend-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.blend-card {
+    width: 45%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.blend-card img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s; /* Add transition for smooth hover effect */
+}
+
+.blend-card:hover img {
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.blend-description {
+    text-align: center;
+    color: #666;
+}
+
+/* Unique blends section styles */
+/* .unique-blends-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.unique-blends-section h2 {
+    color: #333;
+}
+
+.blend-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.blend-card {
+    width: 35%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.blend-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.blend-card:hover img {
+    transform: scale(1.05);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.overlay-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay-text p {
+    font-size: 16px;
+}
+
+.overlay-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blend-cost {
+    color: #ffc107;
+    font-size: 18px;
+}
+
+.buy-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+.unique-blends-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f5e1da; /* Light Peach */
+}
+
+.unique-blends-section h2 {
+    color: #201b18;
+}
+
+.blend-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.blend-card {
+    width: 35%;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.blend-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blend-card:hover {
+    transform: scale(1.05);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:  #d1ccc0;
+    text-align: center;
+    z-index: 2;
+}
+
+.overlay-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay-text p {
+    font-size: 16px;
+}
+
+.overlay-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.blend-cost {
+    color: #f39c12;
+    font-size: 18px;
+}
+
+.buy-button {
+    background-color: #e74c3c;
+    color: #d1ccc0;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* Footer styles */
 footer {
-    background-color: #333;
+    background-color: #C65236;
     color: white;
     text-align: center;
     padding: 10px;
@@ -380,5 +615,42 @@ footer {
 
     .cafes-section {
         padding: 30px;
+    }
+
+    .source-section {
+        padding: 30px;
+    }
+
+    .blends-section {
+        padding: 30px;
+    }
+
+    .blend-card {
+        width: 100%;
+    }
+
+    .unique-blends-section {
+        padding: 30px;
+    }
+
+    .blend-card {
+        width: 100%;
+    }
+
+    .overlay-text h3 {
+        font-size: 18px;
+    }
+
+    .overlay-text p {
+        display: none;
+    }
+
+    .blend-cost {
+        font-size: 14px;
+    }
+
+    .buy-button {
+        padding: 6px 12px;
+        font-size: 14px;
     }
 }
