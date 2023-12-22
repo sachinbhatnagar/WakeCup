@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
     <meta charset="utf-8" />
@@ -18,7 +14,10 @@
 
     <header>
       <div class="logo">
-        <a href="index.html"><img src="./images/WakeCup_500x500.png" alt="WakeCup Logo" /></a>
+        <a href="index.html"
+          ><div class="logo-image-container">
+            <img src="./images/WakeCup_500x500.png" alt="WakeCup Logo" /></div
+        ></a>
       </div>
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <nav>
@@ -48,26 +47,28 @@
 
         <h3>Current Workshops</h3>
         <!-- Workshop Card 1 -->
-        <div class="workshop-card">
-          <h3>The Home Barista</h3>
-          <p>
-            Can’t travel to our workshop? Learn from the comfort of your home by joining our innovative Home Barista workshops. When you sign up, you
-            get your own coffee appreciation kit which you’ll use along with the workshop.
-          </p>
-          <p>Duration: 4 hours | $250</p>
-          <button class="signup-button">Signup</button>
-        </div>
+        <div class="workshop-cards">
+          <div class="workshop-card">
+            <h3>The Home Barista</h3>
+            <p>
+              Can’t travel to our workshop? Learn from the comfort of your home by joining our innovative Home Barista workshops. When you sign up,
+              you get your own coffee appreciation kit which you’ll use along with the workshop.
+            </p>
+            <p>Duration: 4 hours | $250</p>
+            <button class="signup-button">Signup</button>
+          </div>
 
-        <!-- Workshop Card 2 -->
-        <div class="workshop-card">
-          <h3>The Champion Series</h3>
-          <p>
-            Conducted once every year, our Champion series is a serious coffee aficionado’s dream come true. Enthusiasts from across the country
-            gather at our Seattle facility for 3 days of intense brewing to get ready for the Bean King Champion contest held at Montreal every year.
-            This is not to be missed. And we’ve got the awards to prove it.
-          </p>
-          <p>Duration: 3 days on-site | $2000</p>
-          <button class="signup-button">Signup</button>
+          <!-- Workshop Card 2 -->
+          <div class="workshop-card">
+            <h3>The Champion Series</h3>
+            <p>
+              Conducted once every year, our Champion series is a serious coffee aficionado’s dream come true. Enthusiasts from across the country
+              gather at our Seattle facility for 3 days of intense brewing to get ready for the Bean King Champion contest held at Montreal every
+              year. This is not to be missed. And we’ve got the awards to prove it.
+            </p>
+            <p>Duration: 3 days on-site | $2000</p>
+            <button class="signup-button">Signup</button>
+          </div>
         </div>
       </section>
     </div>
